@@ -759,6 +759,7 @@
   }
 
   .progress {
+    position: relative;
     width: 456px;
     height: 528px;
     background: #ffffff;
@@ -782,6 +783,48 @@
         width: 28px;
         height: 20px;
         font-size: 14px;
+      }
+    }
+
+    .content-box {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      right: 0;
+      width: 372px;
+      height: 458px;
+      border-left: 2px solid #9ea7b3;
+      margin-top: 18px;
+      padding-left: 12px;
+    }
+
+    .content {
+      position: relative;
+
+      .now {
+        color: #085de9;
+        
+      }
+      .bj{
+        background: #085de9!important;
+      }
+      .time {
+        position: absolute;
+        top: -6px;
+        left: -78px;
+        width: 38px;
+        font-weight: 600;
+      }
+
+      .cicle {
+        position: absolute;
+        background:#919ba9;
+        left: -17px;
+        width: 8px;
+        height: 8px;
+      
+        border-radius: 50%;
       }
     }
   }
@@ -950,7 +993,7 @@
   }
 }
 // footer部分
-.footer{
+.footer {
   height: 378px;
   background: #f5f7fa;
 }

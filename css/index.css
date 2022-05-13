@@ -694,6 +694,7 @@
   color: #666666;
 }
 .learn-more .progress {
+  position: relative;
   width: 456px;
   height: 528px;
   background: #ffffff;
@@ -718,6 +719,42 @@
   width: 28px;
   height: 20px;
   font-size: 14px;
+}
+.learn-more .progress .content-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  right: 0;
+  width: 372px;
+  height: 458px;
+  border-left: 2px solid #9ea7b3;
+  margin-top: 18px;
+  padding-left: 12px;
+}
+.learn-more .progress .content {
+  position: relative;
+}
+.learn-more .progress .content .now {
+  color: #085de9;
+}
+.learn-more .progress .content .bj {
+  background: #085de9 !important;
+}
+.learn-more .progress .content .time {
+  position: absolute;
+  top: -6px;
+  left: -78px;
+  width: 38px;
+  font-weight: 600;
+}
+.learn-more .progress .content .cicle {
+  position: absolute;
+  background: #919ba9;
+  left: -17px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
 }
 .advert {
   display: flex;
