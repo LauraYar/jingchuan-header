@@ -56,6 +56,12 @@
 .header .header_l ul a:hover {
   color: #085de9;
 }
+.header .header_r {
+  display: flex;
+}
+.header .header_r .header-input {
+  position: relative;
+}
 .header .header_r input {
   width: 184px;
   height: 28px;
@@ -68,8 +74,13 @@
   color: #919ba9;
   line-height: 17px;
 }
-.header .header_r .iconfont icon-xiaoxi {
-  background: #919ba9;
+.header .header_r .iconfont.icon-search {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+}
+.header .header_r .iconfont.icon-xiaoxi {
+  margin: 0 34px;
 }
 .header .header_r .iconfont icon-user {
   font-size: 14px;
