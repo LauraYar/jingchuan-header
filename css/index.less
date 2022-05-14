@@ -59,6 +59,10 @@
   }
 
   .header_r {
+    display: flex;
+    .header-input {
+      position: relative;
+    }
     input {
       width: 184px;
       height: 28px;
@@ -71,8 +75,14 @@
       color: #919ba9;
       line-height: 17px;
     }
-    .iconfont icon-xiaoxi {
-      background: #919ba9;
+
+    .iconfont.icon-search {
+      position: absolute;
+      top: 2px;
+      right: 10px;
+    }
+    .iconfont.icon-xiaoxi {
+      margin: 0 34px;
     }
     .iconfont icon-user {
       font-size: 14px;
@@ -804,10 +814,9 @@
 
       .now {
         color: #085de9;
-        
       }
-      .bj{
-        background: #085de9!important;
+      .bj {
+        background: #085de9 !important;
       }
       .time {
         position: absolute;
@@ -819,11 +828,11 @@
 
       .cicle {
         position: absolute;
-        background:#919ba9;
+        background: #919ba9;
         left: -17px;
         width: 8px;
         height: 8px;
-      
+
         border-radius: 50%;
       }
     }
