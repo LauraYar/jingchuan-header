@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://at.alicdn.com/t/font_3393951_1hot4buw6mi.css?spm=a313x.7781069.1998910419.51&file=font_3393951_1hot4buw6mi.css"
     />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
   </head>
   <body>
     <div class="shortcut">
@@ -45,11 +46,11 @@
       <div class="header_l">
         <img src="./imgs/logo.png" alt="logo" />
         <ul>
-          <li class="current"><a href="#">首页</a></li>
-          <li><a href="#">研究院</a></li>
-          <li><a href="#">直播</a></li>
-          <li><a href="#">资讯</a></li>
-          <li><a href="#">视频</a></li>
+          <li class="current">首页</li>
+          <li>研究院</li>
+          <li>直播</li>
+          <li>资讯</li>
+          <li>视频</li>
         </ul>
       </div>
       <div class="header_r">
@@ -591,13 +592,20 @@
         <!-- 轮播图 -->
         <div class="advert">
           <div class="advert-link">
-            <div class="arrow_l"></div>
-            <div class="arrow_r"></div>
-            <img src="./imgs/focus-1.png" alt="" />
-          </div>
-          <div class="advert-video">
-            <img src="./imgs/video-item.png" alt="" />
-          </div>
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./imgs/focus-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="./imgs/focus-2.png" alt=""></div>
+                <div class="swiper-slide"><img src="./imgs/focus-3.png" alt=""></div>
+             </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+          
+        </div>
+        <div class="advert-video">
+          <img src="./imgs/video-item.png" alt="" />
         </div>
       </div>
 
@@ -848,5 +856,7 @@
       </div>
     </div>
   </body>
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="./js/index.js"></script>
   <script src="./js/flexible.js"></script>
 </html>

@@ -40,6 +40,7 @@
       justify-content: space-between;
       align-items: center;
       margin-left: 40px;
+      cursor: pointer;
       li {
         width: 80px;
         height: 38px;
@@ -49,11 +50,16 @@
         font-size: 16px;
         font-weight: 600;
       }
-      li:hover {
-        border-bottom: 3px solid #085de9;
-      }
-      a:hover {
+      // li:hover {
+      //   border-bottom: 3px solid #085de9;
+      // }
+      // a:hover {
+      //   color: #085de9;
+      // }
+
+      .current{
         color: #085de9;
+        border-bottom: 3px solid #085de9;
       }
     }
   }
@@ -889,7 +895,38 @@
   .advert-link {
     width: 930px;
     height: 190px;
-    background: pink;
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
     img {
       width: 930px;
@@ -899,13 +936,14 @@
   .advert-video {
     width: 450px;
     height: 190px;
-
+    background: pink;
     img {
       width: 456px;
       height: 190px;
     }
   }
 }
+
 // 基础入门等模块
 .main {
   // height: 2000px;
@@ -970,7 +1008,7 @@
 
 .adtopic {
   width: 1400px;
-  height: 650px;
+  height: 680px;
   margin: 16px auto;
 
   .common-title {
@@ -998,6 +1036,7 @@
   .items {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     height: 180px;
 
     .list-item {
@@ -1005,6 +1044,8 @@
       height: 312px;
       padding: 26px 16px 20px;
       margin-right: 8px;
+      margin-bottom: 8px;
+      border: 1px solid #666666;
       background: linear-gradient(to right, #bcc0c6, #f3f6f9, #bcc0c6);
     }
 
